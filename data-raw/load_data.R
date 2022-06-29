@@ -1,0 +1,6 @@
+library(tidyverse)
+library(readr)
+card <- read_csv("card.csv")
+chic <- read_csv("chic.csv")
+diabetes <- read_csv("diabetes.csv")
+usethis::use_data(chic,card, diabetes, overwrite = TRUE)

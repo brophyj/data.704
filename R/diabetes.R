@@ -4,13 +4,13 @@
 #' @format A tibble with 392 rows and 9 variables:
 #' \describe{
 #'   \item{pregnancies}
-#'   \item{glucose}{dbl Month price was recorded. Ranges from 1-12 for January - December}
-#'   \item{bloodpressure}{dbl denoting monthly price for the 0-15/lb. size class}
-#'   \item{skinthickness}{dbl denoting monthly price for the 15-20/lb. size class}
-#'   \item{insulin}{dbl denoting monthly price for the 20-25/lb. size class}
-#'   \item{bmi}{dbl denoting monthly price for the 25-30/lb. size class}
-#'   \item{dpf}{dbl denoting monthly price for the 30-40/lb. size class}
-#'   \item{age}{dbl denoting monthly price for the 40-50/lb. size class}
+#'   \item{glucose}
+#'   \item{bloodpressure}
+#'   \item{skinthickness}
+#'   \item{insulin}
+#'   \item{bmi}
+#'   \item{dpf}
+#'   \item{age}
 #'   \item{outcome}{denoting diabetes yes/no (1/0)}
 #' }
 #' @source \url{}

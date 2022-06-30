@@ -3,9 +3,7 @@
 \docType{data}
 \name{diabetes}
 \alias{diabetes}
-\title{Classic diabetes dataset, a cohort study of Pima Indians. I
-I have cleaned this version,  have cleaned the dataset, removed missing values and scaled the continuous variables for ease of comparisons.
-The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, outcome, based on certain predictor variables.}
+\title{Diabetes dataset from a cohort study of Pima Indians}
 \format{
 A tibble with 392 rows and 9 variables:
 \describe{
@@ -21,14 +19,13 @@ A tibble with 392 rows and 9 variables:
 }
 }
 \source{
-\url{}
+\url{https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database}
 }
 \usage{
 diabetes
 }
 \description{
-Classic diabetes dataset, a cohort study of Pima Indians. I
-I have cleaned this version,  have cleaned the dataset, removed missing values and scaled the continuous variables for ease of comparisons.
+I have cleaned the dataset, removed missing values, and scaled the continuous variables for ease of comparisons.
 The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, outcome, based on certain predictor variables.
 }
 \keyword{datasets}

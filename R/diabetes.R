@@ -1,5 +1,6 @@
-#' Classic diabetes dataset, a cohort study of Pima Indians. I
-#' I have cleaned this version,  have cleaned the dataset, removed missing values and scaled the continuous variables for ease of comparisons.
+#' Diabetes dataset from a cohort study of Pima Indians
+#'
+#' I have cleaned the dataset, removed missing values, and scaled the continuous variables for ease of comparisons.
 #' The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, outcome, based on certain predictor variables.
 #'
 #' @format A tibble with 392 rows and 9 variables:
@@ -14,5 +15,5 @@
 #'   \item{age}{in years}
 #'   \item{outcome}{denoting diabetes yes/no (1/0)}
 #' }
-#' @source \url{}
+#' @source \url{https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database}
 "diabetes"

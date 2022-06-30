@@ -1,16 +1,17 @@
-#' Diabetes dataset
-#'
+#' Classic diabetes dataset, a cohort study of Pima Indians. I
+#' I have cleaned this version,  have cleaned the dataset, removed missing values and scaled the continuous variables for ease of comparisons.
+#' The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, outcome, based on certain predictor variables.
 #'
 #' @format A tibble with 392 rows and 9 variables:
 #' \describe{
-#'   \item{pregnancies}
-#'   \item{glucose}
-#'   \item{bloodpressure}
-#'   \item{skinthickness}
-#'   \item{insulin}
-#'   \item{bmi}
-#'   \item{dpf}
-#'   \item{age}
+#'   \item{pregnancies}{no. pregnancies}
+#'   \item{glucose}{numerical blood level}
+#'   \item{bloodpressure}{numerical BP measurement}
+#'   \item{skinthickness}{numerical skin measurement}
+#'   \item{insulin}{numerical}
+#'   \item{bmi}{Body mass index numerical}
+#'   \item{dpf}{numerical variable that stands for diabetic pedigree function which I have no idea what this truly measures}
+#'   \item{age}{in years}
 #'   \item{outcome}{denoting diabetes yes/no (1/0)}
 #' }
 #' @source \url{}

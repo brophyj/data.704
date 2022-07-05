@@ -1,6 +1,5 @@
 library(tidyverse)
 library(readr)
-card <- read_csv("data-raw/card.csv")
 chic <- read_csv("data-raw/chic.csv")
 diabetes <- read_csv("data-raw/diabetes.csv")
 trop_long_na <- read_csv("data-raw/trop.long.na.csv")

@@ -1,9 +1,9 @@
 library(tidyverse)
 library(readr)
-card <- read_csv("card.csv")
-chic <- read_csv("chic.csv")
-diabetes <- read_csv("diabetes.csv")
-trop_long_na <- read_csv("trop.long.na.csv")
+card <- read_csv("data-raw/card.csv")
+chic <- read_csv("data-raw/chic.csv")
+diabetes <- read_csv("data-raw/diabetes.csv")
+trop_long_na <- read_csv("data-raw/trop.long.na.csv")
 trop <- trop_long_na %>%
   select(c(1:4,8,20,33,34))
 i <- which(trop$cTnT == 3)
@@ -107,7 +107,7 @@ trop <- trop %>% mutate(creat = case_when( pt.id== 1 ~ rnorm(1491, Labo_Creatini
                                           pt.id== 97 ~ rnorm(1491, Labo_Creatinine,5),
                                           pt.id== 98  ~ rnorm(1491, Labo_Creatinine,5),
                                           pt.id== 99  ~ rnorm(1491, Labo_Creatinine,5),
-                                          pt.id== 1000 ~ rnorm(1491, Labo_Creatinine,5),
+                                          pt.id== 100 ~ rnorm(1491, Labo_Creatinine,5),
                                   TRUE ~ 0))
 
 trop <- trop %>%

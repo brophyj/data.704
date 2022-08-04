@@ -1,5 +1,7 @@
 library(tidyverse)
 library(readr)
+cannabis  <- read_csv("data-raw/cannabis.csv") %>%
+  select(-c(5:8,31,33))
 victim  <- read_csv("data-raw/victim.csv")
 victim$race <- factor(victim$race)
 village_randomized <- read_csv("data-raw/village_randomized.csv")
@@ -115,7 +117,7 @@ trop <- trop %>% mutate(creat = case_when( pt.id== 1 ~ rnorm(1491, Labo_Creatini
 trop <- trop %>%
   mutate( creat = ifelse(time==1, Labo_Creatinine, creat)) %>%
   select(-Labo_Creatinine)
-usethis::use_data(chic, victim, village_randomized, diabetes, trop, overwrite = TRUE)
+usethis::use_data(cannabis, chic, victim, village_randomized, diabetes, trop, overwrite = TRUE)
 
 
 

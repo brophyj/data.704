@@ -3,7 +3,7 @@
 \docType{data}
 \name{Challeng}
 \alias{Challeng}
-\title{Challenger dataset of O-ringsfailure}
+\title{Challenger dataset of O-rings failure}
 \format{
 A tibble with 392 rows and 9 variables:
 \describe{
@@ -24,6 +24,6 @@ Challeng
 }
 \description{
 The dataset includes information on O-rings damage from the previous 23 Challenger flights
-There are 6 o rings involved in each flight.
+There are 6 O-rings involved in each flight.
 }
 \keyword{datasets}

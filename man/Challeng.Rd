@@ -7,6 +7,7 @@
 \format{
 A tibble with 392 rows and 9 variables:
 \describe{
+\item{date}{Date of launch}
 \item{temp}{Outsoide temperature at launch (degrees F)}
 \item{pres}{Leak check pressure}
 \item{fail}{Number of O-rings that exhibited damage, essentially whether erosion or blowby occurred}

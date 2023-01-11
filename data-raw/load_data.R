@@ -1,7 +1,13 @@
 library(tidyverse)
 library(readr)
 Challeng <- read_csv("data-raw/Challeng.csv", show_col_types = FALSE) %>%
-  mutate(erosion=ifelse(temp==53,2,1))
+  mutate(erosion=ifelse(temp==53,2,1)) %>%
+  mutate(date= c("4/12/81", "11/12/81", "3/22/82",  "11/11/82", "4/4/83",   "6/18/83",  "8/30/83",  "11/28/83", "2/3/84",   "4/6/84",
+                 "8/30/84",  "10/5/84",  "11/8/84", "1/24/85",  "4/12/85",  "4/29/85",  "6/17/85",  "7/29/85",  "8/27/85",  "10/3/85",
+                 "10/30/85", "11/26/85", "1/12/86"))
+n = ncol(Challeng)
+new.order = c(n, 1:(n-1))
+Challeng = Challeng[, new.order]
 cannabis  <- read_csv("data-raw/cannabis.csv") %>%
   select(-c(5:8,31,33))
 victim  <- read_csv("data-raw/victim.csv")

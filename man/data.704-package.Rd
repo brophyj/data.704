@@ -6,7 +6,19 @@
 \alias{data.704-package}
 \title{data.704: Data for EBOH 704}
 \description{
-Supplies data for 704 labs and lectures
+Supplies data for 704 labs and lectures.
+}
+\details{
+List of datasets included in this package:
+\itemize{
+\item \link{Challeng}: Challenger dataset of O-rings failure
+\item \link{cannabis}: High school cannabis use
+\item \link{chic}: Data of Chicago weather
+\item \link{diabetes}: Diabetes dataset from a cohort study of Pima Indians
+\item \link{trop}: Data of troponin values
+\item \link{victim}: Victim dataset from Agresti, A. (2002). Categorical Data Analysis. p. 561
+\item \link{village_randomized}: A simulated randomized trial dataset
+}
 }
 \author{
 \strong{Maintainer}: Jay Brophy \email{james.brophy@mcgill.ca} (\href{https://orcid.org/0000-0001-8049-6875}{ORCID})

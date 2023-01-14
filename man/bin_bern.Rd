@@ -7,11 +7,13 @@
 bin_bern(df, Successes, Trials)
 }
 \arguments{
-\item{Successes, Trials}{Numbers.}
+\item{df}{Dataframe}
+
+\item{Successes, Trials}{Columns.}
 }
 \value{
 "invisible" \code{NULL}.
 }
 \description{
-This function takes data presented in Binomial (successes, trials) and converts to Bernoulli trials (0,1)
+This function takes data presented in Binomial (successes, trials) format and converts to Bernoulli (0,1) format
 }

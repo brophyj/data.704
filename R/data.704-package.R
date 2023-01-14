@@ -12,7 +12,7 @@
 #' - [village_randomized]: A simulated randomized trial dataset
 #' - [DA]: Anonymized dataset of patients discharged following a hospitalization for incident atrial fibrillation
 #'
-#' List of datasets included in this package:
+#' List of functions included in this package:
 #' - [bin-bern]: To convert data frame from Binomial format to Bernoulli format
 #'
 #' @keywords internal

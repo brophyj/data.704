@@ -13,7 +13,7 @@
 #' - [DA]: Anonymized dataset of patients discharged following a hospitalization for incident atrial fibrillation
 #'
 #' List of functions included in this package:
-#' - [bin-bern]: To convert data frame from Binomial format to Bernoulli format
+#' - [bin_bern]: To convert data frame from Binomial format to Bernoulli format
 #'
 #' @keywords internal
 "_PACKAGE"

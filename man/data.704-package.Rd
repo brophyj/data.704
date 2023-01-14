@@ -23,7 +23,7 @@ List of datasets included in this package:
 
 List of functions included in this package:
 \itemize{
-\item \link{bin-bern}: To convert data frame from Binomial format to Bernoulli format
+\item \link{bin_bern}: To convert data frame from Binomial format to Bernoulli format
 }
 }
 \author{

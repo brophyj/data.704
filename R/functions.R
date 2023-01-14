@@ -17,7 +17,7 @@ pow <- function(x, y) {
 #' This function takes data presented in Binomial (successes, trials) format and converts to Bernoulli (0,1) format
 #'
 #' @param df Dataframe
-#' @param Successes,Trials Columns.
+#' @param Successes,Trials  Columns
 #' @return "invisible" `NULL`.
 #' @export
 bin_bern <- function(df,Successes, Trials) {

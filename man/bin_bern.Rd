@@ -9,7 +9,7 @@ bin_bern(df, Successes, Trials)
 \arguments{
 \item{df}{Dataframe}
 
-\item{Successes, Trials}{Columns.}
+\item{Successes, Trials}{Columns}
 }
 \value{
 "invisible" \code{NULL}.

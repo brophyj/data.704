@@ -3,6 +3,7 @@
 #' Anonymized data of patients admitted for incident atrial fibrillation
 #' Patients are discharged on either amiodarone or dronedarone
 #' Variables are measured at baseline admission, except for post_coag which is measured on discharge
+#' Outcome variable is repeat CV hospitalization or death
 #'
 #' @format A tibble with 2073 rows and 28 variables:
 #' \describe{
@@ -22,7 +23,7 @@
 #'   \item{CAD}{Chronic coronary artery disease}
 #'   \item{Val_hd}{CValvular heart disease}
 #'   \item{charl_i}{Charlson index}
-#'   \item{outcome}{Dementia}
+#'   \item{outcome}{No outcomes = 0, Repeat CV hospitalization = 1, Death = 2}
 #'   \item{Follow_up}{Follow up time in days}
 #'   \item{PepticDisease}{Peptic ulcer disease}
 #'   \item{Rx}{Discharge medication, amiodarone or dronedarone}

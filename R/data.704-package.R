@@ -10,6 +10,11 @@
 #' - [trop]: Data of troponin values
 #' - [victim]: Victim dataset from Agresti, A. (2002). Categorical Data Analysis. p. 561
 #' - [village_randomized]: A simulated randomized trial dataset
+#' - [DA]: Anonymized dataset of patients discharged following a hospitalization for incident atrial fibrillation
+#'
+#' List of datasets included in this package:
+#' - [bin-bern]: To convert data frame from Binomial format to Bernoulli format
+#'
 #' @keywords internal
 "_PACKAGE"
 

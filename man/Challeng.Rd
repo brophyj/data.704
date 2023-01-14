@@ -8,10 +8,10 @@
 A tibble with 392 rows and 9 variables:
 \describe{
 \item{date}{Date of launch}
-\item{temp}{Outsoide temperature at launch (degrees F)}
+\item{temp}{Outside temperature at launch (degrees F)}
 \item{pres}{Leak check pressure}
-\item{fail}{Number of O-rings that exhibited damage, essentially whether erosion or blowby occurred}
-\item{n}{Number of O-rings in each Challenger launcj}
+\item{fail}{Number of O-rings that exhibited damage, essentially by erosion or blowby}
+\item{n}{Number of O-rings in each Challenger launch}
 \item{erosion}{Number of O-rings with erosion, arguably the most important outcome variable}
 \item{blowby}{Number of blowby incidents}
 \item{damage}{Total Damage Index, a composite of uncertain derivation, likely erosion, blowby, depth, location, extent and view according to Tufte}

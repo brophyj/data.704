@@ -1,9 +1,9 @@
 Package: data.704
-Title: Data for EBOH 704
+Title: Data and functions for EBOH 704
 Version: 0.0.0.9000
 Authors@R: 
     person("Jay", "Brophy", , "james.brophy@mcgill.ca", role = c("aut", "cre"),comment = c(ORCID = "https://orcid.org/0000-0001-8049-6875"))
-Description: Supplies data for 704 labs and lectures
+Description: Supplies data and functions for 704 labs and lectures
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

@@ -1,5 +1,6 @@
 library(tidyverse)
 library(readr)
+DA <- read_csv("data-raw/dat_DA.csv")
 Challeng <- read_csv("data-raw/Challeng.csv", show_col_types = FALSE) %>%
   mutate(erosion=ifelse(temp==53,2,1)) %>%
   mutate(date= c("4/12/81", "11/12/81", "3/22/82",  "11/11/82", "4/4/83",   "6/18/83",  "8/30/83",  "11/28/83", "2/3/84",   "4/6/84",
@@ -125,7 +126,7 @@ trop <- trop %>% mutate(creat = case_when( pt.id== 1 ~ rnorm(1491, Labo_Creatini
 trop <- trop %>%
   mutate( creat = ifelse(time==1, Labo_Creatinine, creat)) %>%
   select(-Labo_Creatinine)
-usethis::use_data(Challeng, cannabis, chic, victim, village_randomized, diabetes, trop, overwrite = TRUE)
+usethis::use_data(DA, Challeng, cannabis, chic, victim, village_randomized, diabetes, trop, overwrite = TRUE)
 
 
 

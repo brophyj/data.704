@@ -12,16 +12,14 @@ pow <- function(x, y) {
     invisible(NULL)
 }
 
-#' Print x + y
+#' Create long data frame
 #'
-#' This function prints x + y for some reason (it's a test)
+#' This function takes data presented in Binomial (successes, trials) and converts to Bernoulli trials (0,1)
 #'
-#' @param x,y Numbers.
+#' @param Successes,Trials Numbers.
 #' @return "invisible" `NULL`.
 #' @export
-summ <- function(x, y) {
-  # function to print x + y
-  result <- x+y
-  print(paste(x,"r+", y, "is", result))
+bin_bern <- function(df,Successes, Trials) {
+  df %>% mutate(binary = map2({{Successes}}, {{Trials}}, ~ c(rep(1, .x), rep(0, .y - .x)))) %>% unnest(cols = c(binary))
   invisible(NULL)
 }

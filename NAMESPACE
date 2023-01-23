@@ -2,4 +2,5 @@
 
 export(bin_bern)
 export(pow)
+export(tidyOR)
 importFrom(tibble,tibble)

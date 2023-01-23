@@ -24,3 +24,14 @@ bin_bern <- function(df,Successes, Trials) {
   df %>% mutate(binary = map2({{Successes}}, {{Trials}}, ~ c(rep(1, .x), rep(0, .y - .x)))) %>% unnest(cols = c(binary))
   invisible(NULL)
 }
+#' Tidyverse function to extract effect measures & 95%CI
+#'
+#' This function takes glm() as input or glm() %>% tidyOR
+#'
+#' @param glm Model
+#' @return "invisible" `NULL`.
+#' @export
+tidyOR <- function(x) {
+  tidy(x, conf.int = TRUE) %>% select(term, estimate, conf.low, conf.high) %>%
+    mutate(estimate = exp(estimate), conf.low = exp(conf.low), conf.high=exp(conf.high))
+}

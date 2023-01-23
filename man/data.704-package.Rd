@@ -6,7 +6,7 @@
 \alias{data.704-package}
 \title{data.704: Data for EBOH 704}
 \description{
-Supplies data for 704 labs and lectures.
+Supplies some data sets and functions for 704 labs and lectures.
 }
 \details{
 List of datasets included in this package:
@@ -19,11 +19,13 @@ List of datasets included in this package:
 \item \link{victim}: Victim dataset from Agresti, A. (2002). Categorical Data Analysis. p. 561
 \item \link{village_randomized}: A simulated randomized trial dataset
 \item \link{DA}: Anonymized dataset of patients discharged following a hospitalization for incident atrial fibrillation
+\item \link{pace}: Time to event dataset comparing the need for pacemaker following a surgical or percutaneous aortic valve replacement
 }
 
 List of functions included in this package:
 \itemize{
 \item \link{bin_bern}: To convert data frame from Binomial format to Bernoulli format
+\item \link{tidyOR}: Tidyverse function to extract effect size and 95\% CI from glm prodecures
 }
 }
 \author{

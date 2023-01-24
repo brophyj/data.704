@@ -21,5 +21,6 @@ pace
 \description{
 Dataset  obtained by extracting individual time to event data from published Kaplan Meier curves comparing
 survival in those who did and did not undergo permanent pacemaker implantation after transcatheter aortic valve replacement from the SWEDEHEART registry
+The pace dataset has the same hazard ratios as in the original article but is comprised of only 960 individuals equally divided between the 2 groups
 }
 \keyword{datasets}

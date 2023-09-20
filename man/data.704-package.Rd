@@ -20,12 +20,13 @@ List of datasets included in this package:
 \item \link{village_randomized}: A simulated randomized trial dataset
 \item \link{DA}: Anonymized dataset of patients discharged following a hospitalization for incident atrial fibrillation
 \item \link{pace}: Time to event dataset comparing the need for pacemaker following a surgical or percutaneous aortic valve replacement
+\item \link{pace4}: Time to event dataset of PS matched individuals truncated at 4 years FU comparing the need for pacemaker following a surgical or percutaneous aortic valve replacement
 }
 
 List of functions included in this package:
 \itemize{
 \item \link{bin_bern}: To convert data frame from Binomial format to Bernoulli format
-\item \link{tidyOR}: Tidyverse function to extract effect size and 95\% CI from glm prodecures
+\item \link{tidyOR}: Tidyverse function to extract effect size and 95\% CI from glm procedures
 }
 }
 \author{

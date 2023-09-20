@@ -2,6 +2,7 @@
 #'
 #' A recent General Social Survey asked subjects, “Within the past 12 months, how many people have you known personally that were victims of homicide?”
 #' The responses by race, for those who identified themselves as black or as white, were collected.
+#'
 #' @format A tibble with 243 rows and 10 variables:
 #' \describe{
 #'   \item{resp}{Number of victims personally known to the respondent}

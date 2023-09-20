@@ -20,6 +20,7 @@ pow <- function(x, y) {
 #' @param Successes,Trials  Columns
 #' @return "invisible" `NULL`.
 #' @export
+library(tidyverse)
 bin_bern <- function(df,Successes, Trials) {
   df %>% mutate(binary = map2({{Successes}}, {{Trials}}, ~ c(rep(1, .x), rep(0, .y - .x)))) %>% unnest(cols = c(binary))
   invisible(NULL)

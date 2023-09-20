@@ -1,12 +1,9 @@
 library(tidyverse)
-<<<<<<< HEAD
+library(here)
+library(IPDfromKM)
 library(readr) #add new files here e.g. most recent pace
 pace4 <- read_csv("data-raw/pace_4ymax.csv")
 pace <- read_csv("data-raw/pace.csv")
-=======
-library(readr)
-library(here)
-library(IPDfromKM)
 DA <- read_csv("data-raw/dat_DA.csv") %>%
   filter(Rx %in% c("Amio", "Dronedarone"))
 DA$Rx <- factor(DA$Rx, levels = c("Amio", "Dronedarone"),
@@ -19,7 +16,6 @@ Challeng <- read_csv("data-raw/Challeng.csv", show_col_types = FALSE) %>%
 n = ncol(Challeng)
 new.order = c(n, 1:(n-1))
 Challeng = Challeng[, new.order]
->>>>>>> 306cdb01eca052e24bb04682dd183e84bd5cb5f9
 cannabis  <- read_csv("data-raw/cannabis.csv") %>%
   select(-c(5:8,31,33))
 victim  <- read_csv("data-raw/victim.csv")
@@ -137,28 +133,6 @@ trop <- trop %>% mutate(creat = case_when( pt.id== 1 ~ rnorm(1491, Labo_Creatini
 trop <- trop %>%
   mutate( creat = ifelse(time==1, Labo_Creatinine, creat)) %>%
   select(-Labo_Creatinine)
-<<<<<<< HEAD
 usethis::use_data(pace, pace4, cannabis, chic, victim, village_randomized, diabetes, trop, overwrite = TRUE)
-=======
-#pace dataset looking at 4 years
-no_pace <- read.csv("data-raw/no_pacemaker_four_years_km.csv", header= TRUE)
-pace <- read.csv("data-raw/pacemaker_four_years_km.csv", header= TRUE)
-np <- c(480,340,166) # number at risk for no_pace
-p <- c(480,330,167) # number at risk for pace
-t_risk <- c(0,2,4) # X axis tick labels
-pre_no_pace <- IPDfromKM::preprocess(dat=no_pace, trisk=t_risk, nrisk=np,maxy=100)
-pre_pace <- IPDfromKM::preprocess(dat=pace, trisk=t_risk, nrisk=p,maxy=100)
-ipd_no_pace <- IPDfromKM::getIPD(prep=pre_no_pace, armID=0, # treat = 0
-                                 tot.events=NULL)
-ipd_pace <- IPDfromKM::getIPD(prep=pre_pace,armID=1, # treat = 1
-                              tot.events=NULL)
-pace <-  dplyr::bind_rows(ipd_pace$IPD, ipd_no_pace$IPD) %>%
-  dplyr::mutate(treat = dplyr::case_when(
-    treat == 0 ~ "No pacemaker",
-    treat == 1 ~ "Pacemaker"),
-    treat = as.factor(treat))
-usethis::use_data(pace, DA, Challeng, cannabis, chic, victim, village_randomized, diabetes, trop, overwrite = TRUE)
->>>>>>> 306cdb01eca052e24bb04682dd183e84bd5cb5f9
-
 
 

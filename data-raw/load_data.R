@@ -22,6 +22,7 @@ victim  <- read_csv("data-raw/victim.csv")
 victim$race <- factor(victim$race)
 village_randomized <- read_csv("data-raw/village_randomized.csv")
 chic <- read_csv("data-raw/chic.csv")
+ecls1 <- read_csv("data-raw/ecls1.csv", show_col_types = FALSE)
 diabetes <- read_csv("data-raw/diabetes.csv")
 trop_long_na <- read_csv("data-raw/trop.long.na.csv")
 trop <- trop_long_na %>%
@@ -133,6 +134,6 @@ trop <- trop %>% mutate(creat = case_when( pt.id== 1 ~ rnorm(1491, Labo_Creatini
 trop <- trop %>%
   mutate( creat = ifelse(time==1, Labo_Creatinine, creat)) %>%
   select(-Labo_Creatinine)
-usethis::use_data(pace, pace4, cannabis, chic, victim, village_randomized, diabetes, trop, overwrite = TRUE)
+usethis::use_data(pace, pace4, cannabis, ecls1, chic, victim, village_randomized, diabetes, trop, overwrite = TRUE)
 
 

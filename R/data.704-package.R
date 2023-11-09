@@ -10,6 +10,7 @@
 #' - [trop]: Data of troponin values
 #' - [victim]: Victim dataset from Agresti, A. (2002). Categorical Data Analysis. p. 561
 #' - [village_randomized]: A simulated randomized trial dataset
+#' - [ecls1]: A cohort of children's early school experiences
 #' - [DA]: Anonymized dataset of patients discharged following a hospitalization for incident atrial fibrillation
 #' - [pace]: Time to event dataset comparing the need for pacemaker following a surgical or percutaneous aortic valve replacement
 #' - [pace4]: Time to event dataset of PS matched individuals truncated at 4 years FU comparing the need for pacemaker following a surgical or percutaneous aortic valve replacement

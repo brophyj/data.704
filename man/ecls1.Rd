@@ -8,7 +8,7 @@
 A tibble with 11,078 rows and 18 variables:
 \describe{
 \item{id }{child identification number}
-\item{catholic}{dummy: 1= catholic, 0 = public}
+\item{school}{dummy: 1= private, 0 = public}
 \item{race}{child composite race}
 \item{race_white}{dummy: 1= race==white, 0= not white}
 \item{race_black}{ddummy: 1= race==black, 0= not black}
